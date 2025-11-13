@@ -537,10 +537,11 @@
     
     <p class="test-description">
         Création d'un quiz interactif pour aider les clientes à trouver les produits adaptés à leur situation bis
-wesh-y
+wesh-yo
+
     </p>
     
-    <button class='view-mockup-btn' onclick='openMockupModal(\" + 1.ID + )'>Voir la maquette du test</button>
+    <button class='view-mockup-btn' data-test-id=''>Voir la maquette du test</button>
     
     <div class="test-results">
         <div class="result-badge">
@@ -558,12 +559,11 @@ wesh-y
     </div>
 </div>
 
-<!-- Modal pour ce test -->
 <div id="mockup-modal-" class="mockup-modal">
     <div class="mockup-modal-content">
         <div class="mockup-modal-header">
             <h2 class="mockup-modal-title">Quiz personnalisé produits</h2>
-            <button class="mockup-close-btn" onclick="closeMockupModal('')">&times;</button>
+            <button class="mockup-close-btn" data-close-id="">&times;</button>
         </div>
         
         <div class="mockup-info-section">
@@ -588,7 +588,8 @@ wesh-y
         </div>
         
         <p class="mockup-description">Création d'un quiz interactif pour aider les clientes à trouver les produits adaptés à leur situation bis
-wesh-y</p>
+wesh-yo
+</p>
         
         <div class="mockup-images-container two-columns">
             <div class="mockup-column">
@@ -620,10 +621,11 @@ wesh-y</p>
     
     <p class="test-description">
         Création d'un quiz interactif pour aider les clientes à trouver les produits adaptés à leur situation bis
-wesh-y
+wesh-yo
+
     </p>
     
-    <button class='view-mockup-btn' onclick='openMockupModal(\" + 1.ID + )'>Voir la maquette du test</button>
+    <button class='view-mockup-btn' data-test-id=''>Voir la maquette du test</button>
     
     <div class="test-results">
         <div class="result-badge">
@@ -641,12 +643,11 @@ wesh-y
     </div>
 </div>
 
-<!-- Modal pour ce test -->
 <div id="mockup-modal-" class="mockup-modal">
     <div class="mockup-modal-content">
         <div class="mockup-modal-header">
             <h2 class="mockup-modal-title">Quiz personnalisé produits</h2>
-            <button class="mockup-close-btn" onclick="closeMockupModal('')">&times;</button>
+            <button class="mockup-close-btn" data-close-id="">&times;</button>
         </div>
         
         <div class="mockup-info-section">
@@ -671,7 +672,8 @@ wesh-y
         </div>
         
         <p class="mockup-description">Création d'un quiz interactif pour aider les clientes à trouver les produits adaptés à leur situation bis
-wesh-y</p>
+wesh-yo
+</p>
         
         <div class="mockup-images-container two-columns">
             <div class="mockup-column">
@@ -705,57 +707,68 @@ wesh-y</p>
             </div>
         </div>
     </div>
+<script>
+    // Fonction pour changer d'onglet
+    function switchTab(tabName) {
+        // Cacher tous les onglets
+        document.querySelectorAll('.tab-content').forEach(tab => {
+            tab.classList.remove('active');
+        });
+        
+        // Retirer l'état actif de tous les boutons
+        document.querySelectorAll('.tab-button').forEach(btn => {
+            btn.classList.remove('active');
+        });
+        
+        // Afficher l'onglet sélectionné
+        document.getElementById(tabName).classList.add('active');
+        
+        // Activer le bouton cliqué
+        event.target.closest('.tab-button').classList.add('active');
+    }
 
-    <script>
-        function switchTab(tabName) {
-            document.querySelectorAll('.tab-content').forEach(tab => {
-                tab.classList.remove('active');
-            });
-            
-            document.querySelectorAll('.tab-button').forEach(btn => {
-                btn.classList.remove('active');
-            });
-            
-            document.getElementById(tabName).classList.add('active');
-            event.target.closest('.tab-button').classList.add('active');
+    // Gestion des modals avec data attributes
+    document.addEventListener('click', function(e) {
+        // Ouvrir modal
+        if (e.target.classList.contains('view-mockup-btn')) {
+            const testId = e.target.getAttribute('data-test-id');
+            const modal = document.getElementById('mockup-modal-' + testId);
+            if (modal) {
+                modal.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+            }
         }
-
-function openMockupModal(testId) {
-    const modal = document.getElementById('mockup-modal-' + testId);
-    if (modal) {
-        modal.style.display = 'block';
-        document.body.style.overflow = 'hidden';
-    }
-}
-
-function closeMockupModal(testId) {
-    const modal = document.getElementById('mockup-modal-' + testId);
-    if (modal) {
-        modal.style.display = 'none';
-        document.body.style.overflow = 'auto';
-    }
-}
-
-// Fermer la modal en cliquant en dehors
-window.onclick = function(event) {
-    if (event.target.classList.contains('mockup-modal')) {
-        event.target.style.display = 'none';
-        document.body.style.overflow = 'auto';
-    }
-}
-
-// Fermer avec la touche Escape
-document.addEventListener('keydown', function(event) {
-    if (event.key === 'Escape') {
-        const openModals = document.querySelectorAll('.mockup-modal');
-        openModals.forEach(modal => {
-            if (modal.style.display === 'block') {
+        
+        // Fermer modal
+        if (e.target.classList.contains('mockup-close-btn')) {
+            const testId = e.target.getAttribute('data-close-id');
+            const modal = document.getElementById('mockup-modal-' + testId);
+            if (modal) {
                 modal.style.display = 'none';
                 document.body.style.overflow = 'auto';
             }
-        });
-    }
-});
-    </script>
+        }
+        
+        // Fermer en cliquant sur le fond
+        if (e.target.classList.contains('mockup-modal')) {
+            e.target.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    });
+
+    // Fermer avec Escape
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            const openModals = document.querySelectorAll('.mockup-modal');
+            openModals.forEach(modal => {
+                if (modal.style.display === 'block') {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        }
+    });
+</script>
+    
 </body>
 </html>
