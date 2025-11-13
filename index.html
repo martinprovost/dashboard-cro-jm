@@ -281,6 +281,165 @@
     box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
 }
 
+/* Styles pour la modal maquette */
+.mockup-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 10000;
+    overflow-y: auto;
+    padding: 40px 20px;
+}
+
+.mockup-modal-content {
+    background: white;
+    max-width: 1400px;
+    margin: 0 auto;
+    border-radius: 16px;
+    padding: 40px;
+    position: relative;
+}
+
+.mockup-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.mockup-modal-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a202c;
+    flex: 1;
+}
+
+.mockup-close-btn {
+    background: #f1f5f9;
+    border: none;
+    font-size: 2rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #64748b;
+    transition: all 0.3s ease;
+}
+
+.mockup-close-btn:hover {
+    background: #e2e8f0;
+    color: #1a202c;
+}
+
+.mockup-info-section {
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.mockup-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.mockup-info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.mockup-info-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.mockup-info-value {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1a202c;
+}
+
+.mockup-description {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #4a5568;
+    margin-bottom: 30px;
+}
+
+.mockup-images-container {
+    display: grid;
+    gap: 30px;
+}
+
+.mockup-images-container.two-columns {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.mockup-images-container.three-columns {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.mockup-column {
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid #e2e8f0;
+}
+
+.mockup-column-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1a202c;
+    margin-bottom: 15px;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.mockup-column-title.control {
+    color: #2563eb;
+}
+
+.mockup-column-title.variation {
+    color: #16a34a;
+}
+
+.mockup-column-title.variation2 {
+    color: #ea580c;
+}
+
+.mockup-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.mockup-image:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+    .mockup-images-container.two-columns,
+    .mockup-images-container.three-columns {
+        grid-template-columns: 1fr;
+    }
+}
         .impact-main-value {
             font-size: 2.5rem;
             font-weight: 700;
@@ -378,10 +537,10 @@
     
     <p class="test-description">
         Création d'un quiz interactif pour aider les clientes à trouver les produits adaptés à leur situation bis
-wes
+wesh
     </p>
     
-    <button class='view-mockup-btn'>Voir la maquette du test</button>
+    <button class='view-mockup-btn' onclick='openMockupModal(\" + 1.ID + )'>Voir la maquette du test</button>
     
     <div class="test-results">
         <div class="result-badge">
@@ -395,6 +554,54 @@ wes
         <div class="result-badge">
             <div class="result-label">Page</div>
             <div class="result-value" style="color: #718096; font-size: 0.95rem;">Produits</div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal pour ce test -->
+<div id="mockup-modal-" class="mockup-modal">
+    <div class="mockup-modal-content">
+        <div class="mockup-modal-header">
+            <h2 class="mockup-modal-title">Quiz personnalisé produits</h2>
+            <button class="mockup-close-btn" onclick="closeMockupModal('')">&times;</button>
+        </div>
+        
+        <div class="mockup-info-section">
+            <div class="mockup-info-grid">
+                <div class="mockup-info-item">
+                    <span class="mockup-info-label">Type de test</span>
+                    <span class="mockup-info-value">ABC</span>
+                </div>
+                <div class="mockup-info-item">
+                    <span class="mockup-info-label">Device</span>
+                    <span class="mockup-info-value">All</span>
+                </div>
+                <div class="mockup-info-item">
+                    <span class="mockup-info-label">Page</span>
+                    <span class="mockup-info-value">Produits</span>
+                </div>
+                <div class="mockup-info-item">
+                    <span class="mockup-info-label">Date prévue</span>
+                    <span class="mockup-info-value">29/11/2025</span>
+                </div>
+            </div>
+        </div>
+        
+        <p class="mockup-description">Création d'un quiz interactif pour aider les clientes à trouver les produits adaptés à leur situation bis
+wesh</p>
+        
+        <div class="mockup-images-container two-columns">
+            <div class="mockup-column">
+                <h3 class="mockup-column-title control">Contrôle</h3>
+                <img src='https://v5.airtableusercontent.com/v3/u/47/47/1763078400000/KjlsZkw0sn5eQWcBSrr2ow/43SC2dL_FdnkUBCQ335PaSXCQH0S79uldNPCe0EESGV2Ubv2tXKID7cIrCT3VJ244zmhlaM2w5ZIpALBBrlSoHWE3cb90zlJ4d9Bo3kHDW1V_l3H4DxSwZreBA1Veoq431AbClqXb9CfWEXc-1CLr4TivCleTfdvycEBltNOAzwwySaBXXfdewq8x9AubFlq/XXAhKuou1aT7VBxRPQPZ8nVvU4lYbY9_hjtKiKQqacA' alt='Maquette Contrôle' class='mockup-image'>
+            </div>
+            
+            <div class="mockup-column">
+                <h3 class="mockup-column-title variation">Variation 1</h3>
+                <img src='https://v5.airtableusercontent.com/v3/u/47/47/1763078400000/ikdY3VQUe6m30eko_iNHeA/ZCKdJtKx3szkgbt83-OJhfJ0gPwpr5mjRaeyma0ber_FDT0ZTnYhr64PxhWHMNqK7e80TaOO1XXziVqGh3ADjmRjLCtbCfp-ld_FgPvXQ2msh1lGvklb0mSLnq8jlBXPpSFRZHEouj9JqY8Ebb33fR0zQ0IOzc_dxu0gupHkEGa9yN8fIBgCJrCL4Sx1Q9_i/XKCXrGmAcTE8nAfC553bOzO9s-IHVw63bgwSTqeKkUE' alt='Maquette Variation 1' class='mockup-image'>
+            </div>
+            
+            
         </div>
     </div>
 </div>
@@ -429,6 +636,43 @@ wes
             document.getElementById(tabName).classList.add('active');
             event.target.closest('.tab-button').classList.add('active');
         }
+
+function openMockupModal(testId) {
+    const modal = document.getElementById('mockup-modal-' + testId);
+    if (modal) {
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+function closeMockupModal(testId) {
+    const modal = document.getElementById('mockup-modal-' + testId);
+    if (modal) {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+}
+
+// Fermer la modal en cliquant en dehors
+window.onclick = function(event) {
+    if (event.target.classList.contains('mockup-modal')) {
+        event.target.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+}
+
+// Fermer avec la touche Escape
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        const openModals = document.querySelectorAll('.mockup-modal');
+        openModals.forEach(modal => {
+            if (modal.style.display === 'block') {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+    }
+});
     </script>
 </body>
 </html>
