@@ -2,19 +2,16 @@
   "id": "",
   "title": "Quiz personnalisé produits",
   "date": "2025-11-30",
-  "description": "Création d'un quiz interactif pour aider les clientes à trouver les produits adaptés à leur situation -
-wesh wesh yo-yo3",
-  "modifications": "\- Suppression de l'image  
-\- Ajout d'un badge 'Le choix préféré de nos clients'
-",
+  "description": "Création d'un quiz interactif pour aider les clientes à trouver les produits adaptés à leur situation -\\nwesh wesh yo-yo v4",
+  "modifications": "\- Suppression de l'image  \\n\- Ajout d'un badge 'Le choix préféré de nos clients'\\n",
   "testType": "ABC",
   "objective": "Conversion NC",
   "typeTemplate": "Template",
   "device": "All",
   "page": "Produits",
   "maquettes": {
-    "control": "https://v5.airtableusercontent.com/v3/u/47/47/1763128800000/YhZ6KHNHThD9MfKy3YkZsQ/6DQxdvDIs-XhwAtjyfB5a6QidL2U8ZrtRePss2fuHwkh-oOS04jWrFzzs_APz6oBWtw87KER7DSoVsi4gAOKxSAH0JLpZOjQGZHe_6sZwo2tjZof9oX4Kn_Y_mLMkHoe_oBqLIjPfuQwfur9vNqywBTeP443DWZu-zvfsRQD3oWXFJLF6kKUjYlUnPhvrx_l/CB1HGZxxdPp4LqhebksiYc5TIddT6lXET7-yrjv0vmM",
-    "variation1": "https://v5.airtableusercontent.com/v3/u/47/47/1763128800000/tJpB_m_hBb62wYW0Bfu0Bg/WIpLXGnUSQ7BppIXlJrBfG-i4IzOc5Zm_9gCxmQ14cobBfIshqRnCa5k9m7ZTKrxeAF2-BkMVoIwc0Cse5DdInzvTUnObz9dLmZljRrilHc79muzOzSq5OuofFpjwmmEZM5-PBYsQRzROKrLpkv8oNeX6vePl91n5_gtkCwsvRPd1owZ9vryCLFMLwFGO4rU/rddXttusETOyraArGa7j4-pk7yn_Jvgz-CfZf-_4SbE",
+    "control": "https://v5.airtableusercontent.com/v3/u/47/47/1763136000000/a94R-1gOrqOZFLm5at3sLA/C4T7NiiUpOAZcav1UUDk0LYJen0k4jwpPjY3SxYG4PzTN6t6zdzojadvbrDfkMc9bAp_dK2Dmlsx8s06h9bOt_hCd6VrPRmg_S1cSYqH2lq3HzTOCURhnq4waCmfa1KQmdFk4AN5tOFLEl5Hib7nipMGHTReQnQqfMIxFsni4deqkjYzHcwSixwpJqDeeyzF/R6WJUssLvANW3RX4Yo7aVPM9ImKX7lYr4_pY9TPH5DY",
+    "variation1": "https://v5.airtableusercontent.com/v3/u/47/47/1763136000000/_kIZHEnjP5c1l5joODTlxg/-vglrJAdu-Q8oic5jQZrEDoDgg33EW5OTUSjXjwI6yGptaE-UKEmZPfwSvZSiCGRDBeBAj_AdI6CbOd988OPQFxpL2EQ_a33i-C3KRlJEkVLX-AdpPUSKj8WH2cKqTDcjM6QFrl3P2bm7gQ5jfRzMyxBGyhE3RQXsn30-qpBFYfG0eLzKqYyxYqol9coPC4F/oNmsmf8Xq9P1KVViut6D4UCcrd3HtFufLV45JjzZd8M",
     "variation2": null
   }
 }]
