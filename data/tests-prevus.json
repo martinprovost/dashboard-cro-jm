@@ -1,9 +1,9 @@
-[{{{
+{{{
   "id": "",
   "title": "Quiz personnalisé produits",
   "date": "2025-11-30",
   "description": "Création d'un quiz interactif pour aider les clientes à trouver les produits adaptés à leur situation -
-wesh wesh yo",
+wesh wesh yo 2",
   "modifications": "\- Suppression de l'image  
 \- Ajout d'un badge 'Le choix préféré de nos clients'
 ",
@@ -17,4 +17,4 @@ wesh wesh yo",
     "variation1": "https://v5.airtableusercontent.com/v3/u/47/47/1763128800000/tJpB_m_hBb62wYW0Bfu0Bg/WIpLXGnUSQ7BppIXlJrBfG-i4IzOc5Zm_9gCxmQ14cobBfIshqRnCa5k9m7ZTKrxeAF2-BkMVoIwc0Cse5DdInzvTUnObz9dLmZljRrilHc79muzOzSq5OuofFpjwmmEZM5-PBYsQRzROKrLpkv8oNeX6vePl91n5_gtkCwsvRPd1owZ9vryCLFMLwFGO4rU/rddXttusETOyraArGa7j4-pk7yn_Jvgz-CfZf-_4SbE",
     "variation2": null
   }
-}}}]
+}}}
