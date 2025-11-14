@@ -3,7 +3,7 @@
   "title": "Quiz personnalisé produits",
   "date": "2025-11-30",
   "description": "Création d'un quiz interactif pour aider les clientes à trouver les produits adaptés à leur situation -
-weshi",
+wesh wesh yo",
   "modifications": "\- Suppression de l'image  
 \- Ajout d'un badge 'Le choix préféré de nos clients'
 ",
@@ -13,8 +13,8 @@ weshi",
   "device": "All",
   "page": "Produits",
   "maquettes": {
-    "control": \" + 6.`Maquette Contrôle`[1].url + ,
-    "variation1": \" + 6.`Maquette Variation 1`[1].url + ,
+    "control": "https://v5.airtableusercontent.com/v3/u/47/47/1763128800000/YhZ6KHNHThD9MfKy3YkZsQ/6DQxdvDIs-XhwAtjyfB5a6QidL2U8ZrtRePss2fuHwkh-oOS04jWrFzzs_APz6oBWtw87KER7DSoVsi4gAOKxSAH0JLpZOjQGZHe_6sZwo2tjZof9oX4Kn_Y_mLMkHoe_oBqLIjPfuQwfur9vNqywBTeP443DWZu-zvfsRQD3oWXFJLF6kKUjYlUnPhvrx_l/CB1HGZxxdPp4LqhebksiYc5TIddT6lXET7-yrjv0vmM",
+    "variation1": "https://v5.airtableusercontent.com/v3/u/47/47/1763128800000/tJpB_m_hBb62wYW0Bfu0Bg/WIpLXGnUSQ7BppIXlJrBfG-i4IzOc5Zm_9gCxmQ14cobBfIshqRnCa5k9m7ZTKrxeAF2-BkMVoIwc0Cse5DdInzvTUnObz9dLmZljRrilHc79muzOzSq5OuofFpjwmmEZM5-PBYsQRzROKrLpkv8oNeX6vePl91n5_gtkCwsvRPd1owZ9vryCLFMLwFGO4rU/rddXttusETOyraArGa7j4-pk7yn_Jvgz-CfZf-_4SbE",
     "variation2": null
   }
 }}}]
