@@ -2,7 +2,7 @@
   "id": "",
   "title": "Quiz personnalisé produits",
   "date": "2025-11-30",
-  "description": "Création d'un quiz interactif pour aider les clientes à trouver les produits adaptés à leur situation -\\nwesh wesh yo 7",
+  "description": "Création d'un quiz interactif pour aider les clientes à trouver les produits adaptés à leur situation -\\nwesh wesh yo 72",
   "modifications":null,
   "testType": "ABC",
   "objective": "Conversion NC",
@@ -12,22 +12,6 @@
   "maquettes": {
     "control": "https://v5.airtableusercontent.com/v3/u/47/47/1763136000000/a94R-1gOrqOZFLm5at3sLA/C4T7NiiUpOAZcav1UUDk0LYJen0k4jwpPjY3SxYG4PzTN6t6zdzojadvbrDfkMc9bAp_dK2Dmlsx8s06h9bOt_hCd6VrPRmg_S1cSYqH2lq3HzTOCURhnq4waCmfa1KQmdFk4AN5tOFLEl5Hib7nipMGHTReQnQqfMIxFsni4deqkjYzHcwSixwpJqDeeyzF/R6WJUssLvANW3RX4Yo7aVPM9ImKX7lYr4_pY9TPH5DY",
     "variation1": "https://v5.airtableusercontent.com/v3/u/47/47/1763136000000/_kIZHEnjP5c1l5joODTlxg/-vglrJAdu-Q8oic5jQZrEDoDgg33EW5OTUSjXjwI6yGptaE-UKEmZPfwSvZSiCGRDBeBAj_AdI6CbOd988OPQFxpL2EQ_a33i-C3KRlJEkVLX-AdpPUSKj8WH2cKqTDcjM6QFrl3P2bm7gQ5jfRzMyxBGyhE3RQXsn30-qpBFYfG0eLzKqYyxYqol9coPC4F/oNmsmf8Xq9P1KVViut6D4UCcrd3HtFufLV45JjzZd8M",
-    "variation2": null
-  }
-}{
-  "id": "",
-  "title": "",
-  "date": "",
-  "description": "",
-  "modifications":null,
-  "testType": "",
-  "objective": "N/A",
-  "typeTemplate": "",
-  "device": "",
-  "page": "N/A",
-  "maquettes": {
-    "control": "",
-    "variation1": "",
     "variation2": null
   }
 }]
