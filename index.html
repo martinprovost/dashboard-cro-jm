@@ -651,7 +651,7 @@
             }
         }
 
-        // Créer une card de test
+        // Créer une card de test (pour tests prévus)
         function createTestCard(test) {
             const card = document.createElement('div');
             card.className = 'test-card';
@@ -675,6 +675,51 @@
                 <p class="test-description">${test.description || ''}</p>
                 
                 ${hasMockups ? `<button class="view-mockup-btn" onclick="openMockupModal('${test.id}')">Voir la maquette du test</button>` : ''}
+                
+                <div class="test-results">
+                    <div class="result-badge">
+                        <div class="result-label">Type</div>
+                        <div class="result-value neutral">${test.typeTemplate || 'N/A'}</div>
+                    </div>
+                    <div class="result-badge">
+                        <div class="result-label">Device</div>
+                        <div class="result-value neutral">${test.device || 'N/A'}</div>
+                    </div>
+                    <div class="result-badge">
+                        <div class="result-label">Page</div>
+                        <div class="result-value neutral">${test.page || 'N/A'}</div>
+                    </div>
+                </div>
+            `;
+            
+            return card;
+        }
+
+        // Créer une card de test en cours (avec badge et layout différent)
+        function createTestCardEnCours(test) {
+            const card = document.createElement('div');
+            card.className = 'test-card';
+            
+            card.innerHTML = `
+                <div class="test-header">
+                    <div class="test-title-wrapper">
+                        <h3 class="test-title">${test.title}</h3>
+                    </div>
+                    <span class="status-badge en-cours">En Cours</span>
+                </div>
+                
+                <div class="test-meta">
+                    <div class="meta-item">
+                        <span style="font-weight: 600;">Test :</span>
+                        <span>${test.testType || 'N/A'}</span>
+                    </div>
+                    <div class="meta-item">
+                        <span style="font-weight: 600;">Objectif :</span>
+                        <span>${test.objective || 'N/A'}</span>
+                    </div>
+                </div>
+                
+                <p class="test-description">${test.description || ''}</p>
                 
                 <div class="test-results">
                     <div class="result-badge">
@@ -834,14 +879,8 @@
                 }
                 
                 tests.forEach(test => {
-                    const card = createTestCard(test);
+                    const card = createTestCardEnCours(test);
                     grid.appendChild(card);
-                    
-                    // Créer la modal si des maquettes existent
-                    if (test.maquettes && (test.maquettes.control || test.maquettes.variation1)) {
-                        const modal = createTestModal(test);
-                        document.getElementById('modals-container').appendChild(modal);
-                    }
                 });
             } catch (error) {
                 console.error('Erreur lors du chargement des tests en cours:', error);
