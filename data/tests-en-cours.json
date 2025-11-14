@@ -1,1 +1,17 @@
-
+[{
+  "id": "",
+  "title": "Optimisation bloc 'Combo Idéal'",
+  "date": "",
+  "description": "Mettre plus en valeur le produit complémentaire du produit principal pour favoriser le cross-sell et l'AOV",
+  "modifications": null,
+  "testType": "AB",
+  "objective": "AOV",
+  "typeTemplate": "Template",
+  "device": "All",
+  "page": "Produits",
+  "maquettes": {
+    "control": "",
+    "variation1": "",
+    "variation2": null
+  }
+}]
