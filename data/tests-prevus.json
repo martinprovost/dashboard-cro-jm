@@ -1,1 +1,20 @@
-[]
+[{{{
+  "id": "",
+  "title": "Quiz personnalisé produits",
+  "date": "2025-11-30",
+  "description": "Création d'un quiz interactif pour aider les clientes à trouver les produits adaptés à leur situation -
+weshi",
+  "modifications": "\- Suppression de l'image  
+\- Ajout d'un badge 'Le choix préféré de nos clients'
+",
+  "testType": "ABC",
+  "objective": "Conversion NC",
+  "typeTemplate": "Template",
+  "device": "All",
+  "page": "Produits",
+  "maquettes": {
+    "control": \" + 6.`Maquette Contrôle`[1].url + ,
+    "variation1": \" + 6.`Maquette Variation 1`[1].url + ,
+    "variation2": null
+  }
+}}}]
