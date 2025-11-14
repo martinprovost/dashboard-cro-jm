@@ -3,9 +3,7 @@
   "title": "Quiz personnalisé produits",
   "date": "2025-11-30",
   "description": "Création d'un quiz interactif pour aider les clientes à trouver les produits adaptés à leur situation",
-  "modifications": "<p>Suppression de l'image</p>
-<p>Ajout d'un badge Le choix prefere de nos clients</p>
-",
+  "modifications": null,
   "testType": "ABC",
   "objective": "Conversion NC",
   "typeTemplate": "Template",
