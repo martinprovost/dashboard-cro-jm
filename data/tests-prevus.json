@@ -2,16 +2,18 @@
   "id": "",
   "title": "Quiz personnalisé produits",
   "date": "2025-11-30",
-  "description": "Création d'un quiz interactif pour aider les clientes à trouver les produits adaptés à leur situation -\\nwesh wesh yo 72",
-  "modifications":null,
+  "description": "Création d'un quiz interactif pour aider les clientes à trouver les produits adaptés à leur situation",
+  "modifications": "`<p>Suppression de l'image</p>`
+`<p>Ajout d'un badge Le choix prefere de nos clients</p>`
+",
   "testType": "ABC",
   "objective": "Conversion NC",
   "typeTemplate": "Template",
   "device": "All",
   "page": "Produits",
   "maquettes": {
-    "control": "https://v5.airtableusercontent.com/v3/u/47/47/1763136000000/a94R-1gOrqOZFLm5at3sLA/C4T7NiiUpOAZcav1UUDk0LYJen0k4jwpPjY3SxYG4PzTN6t6zdzojadvbrDfkMc9bAp_dK2Dmlsx8s06h9bOt_hCd6VrPRmg_S1cSYqH2lq3HzTOCURhnq4waCmfa1KQmdFk4AN5tOFLEl5Hib7nipMGHTReQnQqfMIxFsni4deqkjYzHcwSixwpJqDeeyzF/R6WJUssLvANW3RX4Yo7aVPM9ImKX7lYr4_pY9TPH5DY",
-    "variation1": "https://v5.airtableusercontent.com/v3/u/47/47/1763136000000/_kIZHEnjP5c1l5joODTlxg/-vglrJAdu-Q8oic5jQZrEDoDgg33EW5OTUSjXjwI6yGptaE-UKEmZPfwSvZSiCGRDBeBAj_AdI6CbOd988OPQFxpL2EQ_a33i-C3KRlJEkVLX-AdpPUSKj8WH2cKqTDcjM6QFrl3P2bm7gQ5jfRzMyxBGyhE3RQXsn30-qpBFYfG0eLzKqYyxYqol9coPC4F/oNmsmf8Xq9P1KVViut6D4UCcrd3HtFufLV45JjzZd8M",
+    "control": "https://v5.airtableusercontent.com/v3/u/47/47/1763143200000/YkmVz5BLFJVJqJZa_CcwfQ/Vp94uuJNszPXqSGIQemrJGDLETdXgyI-kiwpxxy2PmZlouYu0K3yfXm_E7PLDkH4ZnsIYeCiA2cIi19u7busHpFsieme0-ZX0tR4KQIisxLAanXv600d_QJz3OSZcCnDXdcvO3xKKHmyMmcbH0i8eHk8kZOS54CWcOvQTqiE83OIVA2QVkN7ObV24wG2_3g9/h_kxP98j-N-PFBJUX-1NoI1dWTrkavRwhjrMr5f1rJ8",
+    "variation1": "https://v5.airtableusercontent.com/v3/u/47/47/1763143200000/w5NfcWCdMHBmmYzTbVc8eQ/fCGzsMAblXt5FWuW8g_DltDJwnKg-Aiw-vAFYX-V7RyfMtjIar2beWdOWaGmuDz3med3jeYJnNvqkKs2zgNZ8RXMENoLL1ppe1pRiTTS94IbcbIhbIjole8JpjZuz8O1FZS3v-s9hbT5lHZzaUIyTE5GC4eDsmYHzmi-lOdDI34QkGQ7lSAeM9eV9H6e6zX-/1rPS9FRaRCLFG0qRSRWUZPs6RJYRzLRGKGLZhFkT26Y",
     "variation2": null
   }
 }]
