@@ -49,7 +49,7 @@
             cursor: pointer;
             transition: all 0.3s ease;
             position: relative;
-            border: 2px solid #e2e8f0;
+            border: 1px solid #e2e8f0;
         }
 
         .test-card:hover {
@@ -157,33 +157,6 @@
             color: #ef4444;
         }
 
-        .result-value.neutral {
-            font-size: 1rem;
-            font-weight: 600;
-            color: #718096;
-        }
-
-        .view-mockup-btn {
-            width: 100%;
-            padding: 12px 20px;
-            background: #6366f1;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            margin-top: 15px;
-            margin-bottom: 15px;
-        }
-
-        .view-mockup-btn:hover {
-            background: #4f46e5;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
-        }
-
         /* Navigation onglets */
         .tabs-navigation {
             display: flex;
@@ -287,6 +260,187 @@
             margin-bottom: 15px;
         }
 
+.view-mockup-btn {
+    width: 100%;
+    padding: 12px 20px;
+    background: #6366f1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.view-mockup-btn:hover {
+    background: #4f46e5;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+/* Styles pour la modal maquette */
+.mockup-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 10000;
+    overflow-y: auto;
+    padding: 40px 20px;
+}
+
+.mockup-modal-content {
+    background: white;
+    max-width: 1400px;
+    margin: 0 auto;
+    border-radius: 16px;
+    padding: 40px;
+    position: relative;
+}
+
+.mockup-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.mockup-modal-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a202c;
+    flex: 1;
+}
+
+.mockup-close-btn {
+    background: #f1f5f9;
+    border: none;
+    font-size: 2rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #64748b;
+    transition: all 0.3s ease;
+}
+
+.mockup-close-btn:hover {
+    background: #e2e8f0;
+    color: #1a202c;
+}
+
+.mockup-info-section {
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.mockup-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.mockup-info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.mockup-info-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.mockup-info-value {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1a202c;
+}
+
+.mockup-description {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #4a5568;
+    margin-bottom: 30px;
+}
+
+.mockup-images-container {
+    display: grid;
+    gap: 30px;
+}
+
+.mockup-images-container.two-columns {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.mockup-images-container.three-columns {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.mockup-column {
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid #e2e8f0;
+}
+
+.mockup-column-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1a202c;
+    margin-bottom: 15px;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.mockup-column-title.control {
+    color: #2563eb;
+}
+
+.mockup-column-title.variation {
+    color: #16a34a;
+}
+
+.mockup-column-title.variation2 {
+    color: #ea580c;
+}
+
+.mockup-image {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 auto 15px auto;
+    display: block;
+}
+
+.mockup-image:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+    .mockup-images-container.two-columns,
+    .mockup-images-container.three-columns {
+        grid-template-columns: 1fr;
+    }
+}
         .impact-main-value {
             font-size: 2.5rem;
             font-weight: 700;
@@ -295,173 +449,11 @@
             margin-bottom: 10px;
         }
 
-        /* Styles modal maquettes */
-        .mockup-modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.7);
-            z-index: 10000;
-            overflow-y: auto;
-            padding: 40px 20px;
-        }
-
-        .mockup-modal-content {
-            background: white;
-            max-width: 1400px;
-            margin: 0 auto;
-            border-radius: 16px;
-            padding: 40px;
-            position: relative;
-        }
-
-        .mockup-modal-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-            border-bottom: 2px solid #e2e8f0;
-        }
-
-        .mockup-modal-title {
-            font-size: 2rem;
-            font-weight: 700;
-            color: #1a202c;
-            flex: 1;
-        }
-
-        .mockup-close-btn {
-            background: #f1f5f9;
-            border: none;
-            font-size: 2rem;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #64748b;
-            transition: all 0.3s ease;
-        }
-
-        .mockup-close-btn:hover {
-            background: #e2e8f0;
-            color: #1a202c;
-        }
-
-        .mockup-info-section {
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 12px;
-            margin-bottom: 30px;
-        }
-
-        .mockup-info-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-        }
-
-        .mockup-info-item {
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-        }
-
-        .mockup-info-label {
-            font-size: 0.75rem;
-            font-weight: 600;
-            color: #64748b;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .mockup-info-value {
-            font-size: 1rem;
-            font-weight: 600;
-            color: #1a202c;
-        }
-
-        .mockup-description {
-            font-size: 1.05rem;
-            line-height: 1.7;
-            color: #4a5568;
-            margin-bottom: 30px;
-            white-space: pre-wrap;
-        }
-
-        .mockup-images-container {
-            display: grid;
-            gap: 30px;
-        }
-
-        .mockup-images-container.two-columns {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        .mockup-images-container.three-columns {
-            grid-template-columns: repeat(3, 1fr);
-        }
-
-        .mockup-column {
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 12px;
-            border: 2px solid #e2e8f0;
-        }
-
-        .mockup-column-title {
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: #1a202c;
-            margin-bottom: 15px;
-            text-align: center;
-            padding-bottom: 15px;
-            border-bottom: 2px solid #e2e8f0;
-        }
-
-        .mockup-column-title.control {
-            color: #2563eb;
-        }
-
-        .mockup-column-title.variation {
-            color: #16a34a;
-        }
-
-        .mockup-column-title.variation2 {
-            color: #ea580c;
-        }
-
-        .mockup-image {
-            width: 80%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin: 0 auto 15px auto;
-            display: block;
-        }
-
-        .mockup-image:last-child {
-            margin-bottom: 0;
-        }
-
-        @media (max-width: 1024px) {
-            .mockup-images-container.two-columns,
-            .mockup-images-container.three-columns {
+        @media (max-width: 768px) {
+            .home-stats-grid {
                 grid-template-columns: 1fr;
             }
             .impact-cards-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .home-stats-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -490,10 +482,6 @@
             <button class="tab-button" onclick="switchTab('termines')">
                 <span>✓</span>
                 <span>Tests terminés</span>
-            </button>
-            <button class="tab-button" style="opacity: 0.5; cursor: not-allowed;" disabled>
-                <span>🔒</span>
-                <span>Looker Studio</span>
             </button>
         </div>
 
@@ -529,51 +517,300 @@
                     <div class="impact-main-value">+0%</div>
                 </div>
             </div>
-
-            <div class="impact-cards-grid">
-                <div class="impact-card">
-                    <h3 class="impact-title">Commandes / Mois</h3>
-                    <div class="impact-main-value">+0</div>
-                </div>
-                <div class="impact-card">
-                    <h3 class="impact-title">Revenu / Mois</h3>
-                    <div class="impact-main-value">+0€</div>
-                </div>
-                <div class="impact-card">
-                    <h3 class="impact-title">Profit / Mois</h3>
-                    <div class="impact-main-value">+0€</div>
-                </div>
-            </div>
-
-            <h2 class="impact-section-title">Documents</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
-                <div style="background: white; border-radius: 16px; padding: 30px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08); border: 1px solid #e2e8f0; display: flex; align-items: center; gap: 20px;">
-                    <div style="font-size: 2.5rem;">📝</div>
-                    <div style="flex: 1;">
-                        <h3 style="font-size: 1.1rem; font-weight: 600; color: #1a202c; margin-bottom: 10px;">Roadmap des A/B tests</h3>
-                        <a href="#" style="display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; background: #3b82f6; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 0.9rem;">
-                            <span>↗</span>
-                            <span>Voir la roadmap</span>
-                        </a>
-                    </div>
-                </div>
-                <div style="background: white; border-radius: 16px; padding: 30px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08); border: 1px solid #e2e8f0; display: flex; align-items: center; gap: 20px;">
-                    <div style="font-size: 2.5rem;">📊</div>
-                    <div style="flex: 1;">
-                        <h3 style="font-size: 1.1rem; font-weight: 600; color: #1a202c; margin-bottom: 10px;">Audit datas</h3>
-                        <a href="#" style="display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; background: #3b82f6; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 0.9rem;">
-                            <span>↗</span>
-                            <span>Voir l'audit</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
         </div>
 
         <!-- Onglet: Tests prévus -->
         <div id="prevus" class="tab-content">
-            <div id="prevus-grid" class="tests-grid">
-                <!-- Les cards seront générées ici par JavaScript -->
+            <div class="tests-grid">
+                <div class="test-card" style="border: 2px solid #e2e8f0;">
+    <div class="test-header">
+        <div class="test-title-wrapper">
+            <h3 class="test-title">Quiz personnalisé produits</h3>
+        </div>
+    </div>
+    
+    <div class="test-meta">
+        <div class="meta-item">
+            <span>📅</span>
+            <span style="font-weight: 600; color: #1e40af;">Prévu: 29 November 2025</span>
+        </div>
+    </div>
+    
+    <p class="test-description">
+        Création d'un quiz interactif pour aider les clientes à trouver les produits adaptés à leur situation
+    </p>
+    
+    <button class='view-mockup-btn' data-test-id=''>Voir la maquette du test</button>
+    
+    <div class="test-results">
+        <div class="result-badge">
+            <div class="result-label">Type</div>
+            <div class="result-value" style="color: #718096; font-size: 0.95rem;">Template</div>
+        </div>
+        <div class="result-badge">
+            <div class="result-label">Device</div>
+            <div class="result-value" style="color: #718096; font-size: 0.95rem;">All</div>
+        </div>
+        <div class="result-badge">
+            <div class="result-label">Page</div>
+            <div class="result-value" style="color: #718096; font-size: 0.95rem;">Produits</div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal pour ce test -->
+<div id="mockup-modal-" class="mockup-modal">
+    <div class="mockup-modal-content">
+        <div class="mockup-modal-header">
+            <h2 class="mockup-modal-title">Quiz personnalisé produits</h2>
+            <button class="mockup-close-btn" data-close-id="">&times;</button>
+        </div>
+
+        <div style="background: #eff6ff; padding: 15px 20px; border-radius: 12px; margin-bottom: 25px; border-left: 4px solid #3b82f6;">
+            <div style="font-size: 0.85rem; font-weight: 600; color: #1e40af; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 5px;">Semaine de lancement</div>
+            <div style="font-size: 1.3rem; font-weight: 700; color: #1e40af;">29 November 2025</div>
+        </div>
+        
+        <div class="mockup-info-section">
+            <div class="mockup-info-grid">
+                <div class="mockup-info-item">
+                    <span class="mockup-info-label">Test</span>
+                    <span class="mockup-info-value">ABC</span>
+                </div>
+                <div class="mockup-info-item">
+                    <span class="mockup-info-label">Type</span>
+                    <span class="mockup-info-value">Template</span>
+                </div>
+                <div class="mockup-info-item">
+                    <span class="mockup-info-label">Device</span>
+                    <span class="mockup-info-value">All</span>
+                </div>
+                <div class="mockup-info-item">
+                    <span class="mockup-info-label">Page</span>
+                    <span class="mockup-info-value">Produits</span>
+                </div>
+               <div class="mockup-info-item">
+                    <span class="mockup-info-label">Objectif</span>
+                    <span class="mockup-info-value">Conversion NC</span>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="font-size: 1.2rem; font-weight: 700; color: #1a202c; margin-bottom: 15px; margin-top: 25px;">Description</h3>
+        <p class="mockup-description">Création d'un quiz interactif pour aider les clientes à trouver les produits adaptés à leur situation</p>
+
+<h3 style='font-size: 1.2rem; font-weight: 700; color: #1a202c; margin-bottom: 15px; margin-top: 25px;'>Modifications</h3><div class='mockup-description' style='white-space: pre-wrap;'>Suppression de l'image
+Ajout d'un badge Le choix prefere de nos clients
+</div>
+
+        
+        <div class="mockup-images-container two-columns">
+            <div class="mockup-column">
+                <h3 class="mockup-column-title control">Contrôle</h3>
+                <img src='https://v5.airtableusercontent.com/v3/u/47/47/1764007200000/E89yLwK8rePFFvmKh7qbpQ/jL87qzHugSb9HuNPJbfEo40z_V4BhdqJoTXRqTsLvb9Aqv2K9rEDDOe1Lv7qIjnP8Hnxx9p01LIUG-JssRU-1FmV_1g4hJXWObsMEpaXMh--AYig5a9V4RhILCZoL8qCgG1citH78A4gDOqejPeiQEOhUH3ZpuLQxTQATFqqx6MXvkUnAnJYp38vvVGayM59/OOShNLQq4Pv6o_zdMB4nWqc4U3M8ig-vVWJbeCiPbUU' alt='Maquette Contrôle' class='mockup-image'>
+            </div>
+            
+            <div class="mockup-column">
+                <h3 class="mockup-column-title variation">Variation</h3>
+                <img src='https://v5.airtableusercontent.com/v3/u/47/47/1764007200000/EZ6DAUWLsseAYQ3M75AH2g/96XWg-yZ4M5VgC7yIEcu8-WzJkc3q39K_SgAAW7RnP3u9IxsN8R14iFxtzHHm-zWSbp4FspAEQX69T1GeBr4DmsD2wsACJxDDjmThvJq3R-ALUSa26EC8e1O53BwHMy-8ZfOXioD5iY8Bzo968kNdoBgrb8hE0M7lhoVPllhH3BJppsCr8eBXxwEk6cyUxHK/ejimnZcTnum1nEYVdfQXTzKcMSD0S2x1Wj1Z_eqNn0c' alt='Maquette Variation 1' class='mockup-image'>
+            </div>
+            
+            
+        </div>
+    </div>
+</div><div class="test-card" style="border: 2px solid #e2e8f0;">
+    <div class="test-header">
+        <div class="test-title-wrapper">
+            <h3 class="test-title">Quiz personnalisé produits</h3>
+        </div>
+    </div>
+    
+    <div class="test-meta">
+        <div class="meta-item">
+            <span>📅</span>
+            <span style="font-weight: 600; color: #1e40af;">Prévu: 29 November 2025</span>
+        </div>
+    </div>
+    
+    <p class="test-description">
+        Création d'un quiz interactif pour aider les clientes à trouver les produits adaptés à leur situation
+    </p>
+    
+    <button class='view-mockup-btn' data-test-id=''>Voir la maquette du test</button>
+    
+    <div class="test-results">
+        <div class="result-badge">
+            <div class="result-label">Type</div>
+            <div class="result-value" style="color: #718096; font-size: 0.95rem;">Template</div>
+        </div>
+        <div class="result-badge">
+            <div class="result-label">Device</div>
+            <div class="result-value" style="color: #718096; font-size: 0.95rem;">All</div>
+        </div>
+        <div class="result-badge">
+            <div class="result-label">Page</div>
+            <div class="result-value" style="color: #718096; font-size: 0.95rem;">Produits</div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal pour ce test -->
+<div id="mockup-modal-" class="mockup-modal">
+    <div class="mockup-modal-content">
+        <div class="mockup-modal-header">
+            <h2 class="mockup-modal-title">Quiz personnalisé produits</h2>
+            <button class="mockup-close-btn" data-close-id="">&times;</button>
+        </div>
+
+        <div style="background: #eff6ff; padding: 15px 20px; border-radius: 12px; margin-bottom: 25px; border-left: 4px solid #3b82f6;">
+            <div style="font-size: 0.85rem; font-weight: 600; color: #1e40af; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 5px;">Semaine de lancement</div>
+            <div style="font-size: 1.3rem; font-weight: 700; color: #1e40af;">29 November 2025</div>
+        </div>
+        
+        <div class="mockup-info-section">
+            <div class="mockup-info-grid">
+                <div class="mockup-info-item">
+                    <span class="mockup-info-label">Test</span>
+                    <span class="mockup-info-value">ABC</span>
+                </div>
+                <div class="mockup-info-item">
+                    <span class="mockup-info-label">Type</span>
+                    <span class="mockup-info-value">Template</span>
+                </div>
+                <div class="mockup-info-item">
+                    <span class="mockup-info-label">Device</span>
+                    <span class="mockup-info-value">All</span>
+                </div>
+                <div class="mockup-info-item">
+                    <span class="mockup-info-label">Page</span>
+                    <span class="mockup-info-value">Produits</span>
+                </div>
+               <div class="mockup-info-item">
+                    <span class="mockup-info-label">Objectif</span>
+                    <span class="mockup-info-value">Conversion NC</span>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="font-size: 1.2rem; font-weight: 700; color: #1a202c; margin-bottom: 15px; margin-top: 25px;">Description</h3>
+        <p class="mockup-description">Création d'un quiz interactif pour aider les clientes à trouver les produits adaptés à leur situation</p>
+
+<h3 style='font-size: 1.2rem; font-weight: 700; color: #1a202c; margin-bottom: 15px; margin-top: 25px;'>Modifications</h3><div class='mockup-description' style='white-space: pre-wrap;'>Suppression de l'image
+Ajout d'un badge Le choix prefere de nos clients
+</div>
+
+        
+        <div class="mockup-images-container two-columns">
+            <div class="mockup-column">
+                <h3 class="mockup-column-title control">Contrôle</h3>
+                <img src='https://v5.airtableusercontent.com/v3/u/47/47/1764007200000/E89yLwK8rePFFvmKh7qbpQ/jL87qzHugSb9HuNPJbfEo40z_V4BhdqJoTXRqTsLvb9Aqv2K9rEDDOe1Lv7qIjnP8Hnxx9p01LIUG-JssRU-1FmV_1g4hJXWObsMEpaXMh--AYig5a9V4RhILCZoL8qCgG1citH78A4gDOqejPeiQEOhUH3ZpuLQxTQATFqqx6MXvkUnAnJYp38vvVGayM59/OOShNLQq4Pv6o_zdMB4nWqc4U3M8ig-vVWJbeCiPbUU' alt='Maquette Contrôle' class='mockup-image'>
+            </div>
+            
+            <div class="mockup-column">
+                <h3 class="mockup-column-title variation">Variation</h3>
+                <img src='https://v5.airtableusercontent.com/v3/u/47/47/1764007200000/EZ6DAUWLsseAYQ3M75AH2g/96XWg-yZ4M5VgC7yIEcu8-WzJkc3q39K_SgAAW7RnP3u9IxsN8R14iFxtzHHm-zWSbp4FspAEQX69T1GeBr4DmsD2wsACJxDDjmThvJq3R-ALUSa26EC8e1O53BwHMy-8ZfOXioD5iY8Bzo968kNdoBgrb8hE0M7lhoVPllhH3BJppsCr8eBXxwEk6cyUxHK/ejimnZcTnum1nEYVdfQXTzKcMSD0S2x1Wj1Z_eqNn0c' alt='Maquette Variation 1' class='mockup-image'>
+            </div>
+            
+            
+        </div>
+    </div>
+</div><div class="test-card" style="border: 2px solid #e2e8f0;">
+    <div class="test-header">
+        <div class="test-title-wrapper">
+            <h3 class="test-title">Quiz personnalisé produits</h3>
+        </div>
+    </div>
+    
+    <div class="test-meta">
+        <div class="meta-item">
+            <span>📅</span>
+            <span style="font-weight: 600; color: #1e40af;">Prévu: 29 November 2025</span>
+        </div>
+    </div>
+    
+    <p class="test-description">
+        Création d'un quiz interactif pour aider les clientes à trouver les produits adaptés à leur situation
+    </p>
+    
+    <button class='view-mockup-btn' data-test-id=''>Voir la maquette du test</button>
+    
+    <div class="test-results">
+        <div class="result-badge">
+            <div class="result-label">Type</div>
+            <div class="result-value" style="color: #718096; font-size: 0.95rem;">Template</div>
+        </div>
+        <div class="result-badge">
+            <div class="result-label">Device</div>
+            <div class="result-value" style="color: #718096; font-size: 0.95rem;">All</div>
+        </div>
+        <div class="result-badge">
+            <div class="result-label">Page</div>
+            <div class="result-value" style="color: #718096; font-size: 0.95rem;">Produits</div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal pour ce test -->
+<div id="mockup-modal-" class="mockup-modal">
+    <div class="mockup-modal-content">
+        <div class="mockup-modal-header">
+            <h2 class="mockup-modal-title">Quiz personnalisé produits</h2>
+            <button class="mockup-close-btn" data-close-id="">&times;</button>
+        </div>
+
+        <div style="background: #eff6ff; padding: 15px 20px; border-radius: 12px; margin-bottom: 25px; border-left: 4px solid #3b82f6;">
+            <div style="font-size: 0.85rem; font-weight: 600; color: #1e40af; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 5px;">Semaine de lancement</div>
+            <div style="font-size: 1.3rem; font-weight: 700; color: #1e40af;">29 November 2025</div>
+        </div>
+        
+        <div class="mockup-info-section">
+            <div class="mockup-info-grid">
+                <div class="mockup-info-item">
+                    <span class="mockup-info-label">Test</span>
+                    <span class="mockup-info-value">ABC</span>
+                </div>
+                <div class="mockup-info-item">
+                    <span class="mockup-info-label">Type</span>
+                    <span class="mockup-info-value">Template</span>
+                </div>
+                <div class="mockup-info-item">
+                    <span class="mockup-info-label">Device</span>
+                    <span class="mockup-info-value">All</span>
+                </div>
+                <div class="mockup-info-item">
+                    <span class="mockup-info-label">Page</span>
+                    <span class="mockup-info-value">Produits</span>
+                </div>
+               <div class="mockup-info-item">
+                    <span class="mockup-info-label">Objectif</span>
+                    <span class="mockup-info-value">Conversion NC</span>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="font-size: 1.2rem; font-weight: 700; color: #1a202c; margin-bottom: 15px; margin-top: 25px;">Description</h3>
+        <p class="mockup-description">Création d'un quiz interactif pour aider les clientes à trouver les produits adaptés à leur situation</p>
+
+<h3 style='font-size: 1.2rem; font-weight: 700; color: #1a202c; margin-bottom: 15px; margin-top: 25px;'>Modifications</h3><div class='mockup-description' style='white-space: pre-wrap;'>Suppression de l'image
+Ajout d'un badge Le choix prefere de nos clients
+</div>
+
+        
+        <div class="mockup-images-container two-columns">
+            <div class="mockup-column">
+                <h3 class="mockup-column-title control">Contrôle</h3>
+                <img src='https://v5.airtableusercontent.com/v3/u/47/47/1764007200000/E89yLwK8rePFFvmKh7qbpQ/jL87qzHugSb9HuNPJbfEo40z_V4BhdqJoTXRqTsLvb9Aqv2K9rEDDOe1Lv7qIjnP8Hnxx9p01LIUG-JssRU-1FmV_1g4hJXWObsMEpaXMh--AYig5a9V4RhILCZoL8qCgG1citH78A4gDOqejPeiQEOhUH3ZpuLQxTQATFqqx6MXvkUnAnJYp38vvVGayM59/OOShNLQq4Pv6o_zdMB4nWqc4U3M8ig-vVWJbeCiPbUU' alt='Maquette Contrôle' class='mockup-image'>
+            </div>
+            
+            <div class="mockup-column">
+                <h3 class="mockup-column-title variation">Variation</h3>
+                <img src='https://v5.airtableusercontent.com/v3/u/47/47/1764007200000/EZ6DAUWLsseAYQ3M75AH2g/96XWg-yZ4M5VgC7yIEcu8-WzJkc3q39K_SgAAW7RnP3u9IxsN8R14iFxtzHHm-zWSbp4FspAEQX69T1GeBr4DmsD2wsACJxDDjmThvJq3R-ALUSa26EC8e1O53BwHMy-8ZfOXioD5iY8Bzo968kNdoBgrb8hE0M7lhoVPllhH3BJppsCr8eBXxwEk6cyUxHK/ejimnZcTnum1nEYVdfQXTzKcMSD0S2x1Wj1Z_eqNn0c' alt='Maquette Variation 1' class='mockup-image'>
+            </div>
+            
+            
+        </div>
+    </div>
+</div>
             </div>
         </div>
 
@@ -591,308 +828,68 @@
             </div>
         </div>
     </div>
+<script>
+    // Fonction pour changer d'onglet
+    function switchTab(tabName) {
+        // Cacher tous les onglets
+        document.querySelectorAll('.tab-content').forEach(tab => {
+            tab.classList.remove('active');
+        });
+        
+        // Retirer l'état actif de tous les boutons
+        document.querySelectorAll('.tab-button').forEach(btn => {
+            btn.classList.remove('active');
+        });
+        
+        // Afficher l'onglet sélectionné
+        document.getElementById(tabName).classList.add('active');
+        
+        // Activer le bouton cliqué
+        event.target.closest('.tab-button').classList.add('active');
+    }
 
-    <!-- Container pour les modals (sera rempli dynamiquement) -->
-    <div id="modals-container"></div>
-
-    <script>
-        // Fonction pour changer d'onglet
-        function switchTab(tabName) {
-            document.querySelectorAll('.tab-content').forEach(tab => {
-                tab.classList.remove('active');
-            });
-            
-            document.querySelectorAll('.tab-button').forEach(btn => {
-                btn.classList.remove('active');
-            });
-            
-            document.getElementById(tabName).classList.add('active');
-            event.target.closest('.tab-button').classList.add('active');
-        }
-
-        // Formater une date
-        function formatDate(dateString) {
-            const options = { year: 'numeric', month: 'long', day: 'numeric' };
-            const date = new Date(dateString);
-            return date.toLocaleDateString('fr-FR', options);
-        }
-
-        // Charger les tests prévus
-        async function loadTestsPrevus() {
-            try {
-                const response = await fetch('data/tests-prevus.json');
-                const tests = await response.json();
-                
-                const grid = document.getElementById('prevus-grid');
-                const modalsContainer = document.getElementById('modals-container');
-                
-                grid.innerHTML = '';
-                modalsContainer.innerHTML = '';
-                
-                if (tests.length === 0) {
-                    grid.innerHTML = '<p style="color: #718096;">Aucun test prévu pour le moment.</p>';
-                    return;
-                }
-                
-                tests.forEach(test => {
-                    // Créer la card
-                    const card = createTestCard(test);
-                    grid.appendChild(card);
-                    
-                    // Créer la modal si des maquettes existent
-                    if (test.maquettes && (test.maquettes.control || test.maquettes.variation1)) {
-                        const modal = createTestModal(test);
-                        modalsContainer.appendChild(modal);
-                    }
-                });
-            } catch (error) {
-                console.error('Erreur lors du chargement des tests:', error);
-                document.getElementById('prevus-grid').innerHTML = '<p style="color: #718096;">Erreur lors du chargement des tests.</p>';
-            }
-        }
-
-        // Créer une card de test (pour tests prévus)
-        function createTestCard(test) {
-            const card = document.createElement('div');
-            card.className = 'test-card';
-            
-            const hasMockups = test.maquettes && (test.maquettes.control || test.maquettes.variation1);
-            
-            card.innerHTML = `
-                <div class="test-header">
-                    <div class="test-title-wrapper">
-                        <h3 class="test-title">${test.title}</h3>
-                    </div>
-                </div>
-                
-                <div class="test-meta">
-                    <div class="meta-item">
-                        <span>📅</span>
-                        <span style="font-weight: 600; color: #1e40af;">Prévu: ${formatDate(test.date)}</span>
-                    </div>
-                </div>
-                
-                <p class="test-description">${test.description || ''}</p>
-                
-                ${hasMockups ? `<button class="view-mockup-btn" onclick="openMockupModal('${test.id}')">Voir la maquette du test</button>` : ''}
-                
-                <div class="test-results">
-                    <div class="result-badge">
-                        <div class="result-label">Type</div>
-                        <div class="result-value neutral">${test.typeTemplate || 'N/A'}</div>
-                    </div>
-                    <div class="result-badge">
-                        <div class="result-label">Device</div>
-                        <div class="result-value neutral">${test.device || 'N/A'}</div>
-                    </div>
-                    <div class="result-badge">
-                        <div class="result-label">Page</div>
-                        <div class="result-value neutral">${test.page || 'N/A'}</div>
-                    </div>
-                </div>
-            `;
-            
-            return card;
-        }
-
-        // Créer une card de test en cours (avec badge et layout différent)
-        function createTestCardEnCours(test) {
-            const card = document.createElement('div');
-            card.className = 'test-card';
-            
-            card.innerHTML = `
-                <div class="test-header">
-                    <div class="test-title-wrapper">
-                        <h3 class="test-title">${test.title}</h3>
-                    </div>
-                    <span class="status-badge en-cours">En Cours</span>
-                </div>
-                
-                <div class="test-meta">
-                    <div class="meta-item">
-                        <span style="font-weight: 600;">Test :</span>
-                        <span>${test.testType || 'N/A'}</span>
-                    </div>
-                    <div class="meta-item">
-                        <span style="font-weight: 600;">Objectif :</span>
-                        <span>${test.objective || 'N/A'}</span>
-                    </div>
-                </div>
-                
-                <p class="test-description">${test.description || ''}</p>
-                
-                <div class="test-results">
-                    <div class="result-badge">
-                        <div class="result-label">Type</div>
-                        <div class="result-value neutral">${test.typeTemplate || 'N/A'}</div>
-                    </div>
-                    <div class="result-badge">
-                        <div class="result-label">Device</div>
-                        <div class="result-value neutral">${test.device || 'N/A'}</div>
-                    </div>
-                    <div class="result-badge">
-                        <div class="result-label">Page</div>
-                        <div class="result-value neutral">${test.page || 'N/A'}</div>
-                    </div>
-                </div>
-            `;
-            
-            return card;
-        }
-
-        // Créer la modal d'un test
-        function createTestModal(test) {
-            const modal = document.createElement('div');
-            modal.id = `mockup-modal-${test.id}`;
-            modal.className = 'mockup-modal';
-            
-            const hasVariation2 = test.maquettes && test.maquettes.variation2;
-            const columnsClass = hasVariation2 ? 'three-columns' : 'two-columns';
-            
-            // Créer la section Modifications si elle existe
-            let modificationsSection = '';
-            if (test.modifications) {
-                modificationsSection = `
-                    <h3 style="font-size: 1.2rem; font-weight: 700; color: #1a202c; margin-bottom: 15px; margin-top: 25px;">Modifications</h3>
-                    <div class="mockup-description">${test.modifications}</div>
-                `;
-            }
-            
-            modal.innerHTML = `
-                <div class="mockup-modal-content">
-                    <div class="mockup-modal-header">
-                        <h2 class="mockup-modal-title">${test.title}</h2>
-                        <button class="mockup-close-btn" onclick="closeMockupModal('${test.id}')">&times;</button>
-                    </div>
-
-                    <div style="background: #eff6ff; padding: 15px 20px; border-radius: 12px; margin-bottom: 25px; border-left: 4px solid #3b82f6;">
-                        <div style="font-size: 0.85rem; font-weight: 600; color: #1e40af; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 5px;">Semaine de lancement</div>
-                        <div style="font-size: 1.3rem; font-weight: 700; color: #1e40af;">${formatDate(test.date)}</div>
-                    </div>
-                    
-                    <div class="mockup-info-section">
-                        <div class="mockup-info-grid">
-                            <div class="mockup-info-item">
-                                <span class="mockup-info-label">Test</span>
-                                <span class="mockup-info-value">${test.testType || 'N/A'}</span>
-                            </div>
-                            <div class="mockup-info-item">
-                                <span class="mockup-info-label">Objectif</span>
-                                <span class="mockup-info-value">${test.objective || 'N/A'}</span>
-                            </div>
-                            <div class="mockup-info-item">
-                                <span class="mockup-info-label">Type</span>
-                                <span class="mockup-info-value">${test.typeTemplate || 'N/A'}</span>
-                            </div>
-                            <div class="mockup-info-item">
-                                <span class="mockup-info-label">Device</span>
-                                <span class="mockup-info-value">${test.device || 'N/A'}</span>
-                            </div>
-                            <div class="mockup-info-item">
-                                <span class="mockup-info-label">Page</span>
-                                <span class="mockup-info-value">${test.page || 'N/A'}</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <h3 style="font-size: 1.2rem; font-weight: 700; color: #1a202c; margin-bottom: 15px; margin-top: 25px;">Description</h3>
-                    <p class="mockup-description">${test.description || ''}</p>
-
-                    ${modificationsSection}
-                    
-                    <div class="mockup-images-container ${columnsClass}">
-                        <div class="mockup-column">
-                            <h3 class="mockup-column-title control">Contrôle</h3>
-                            ${test.maquettes.control ? `<img src="${test.maquettes.control}" alt="Maquette Contrôle" class="mockup-image">` : '<p style="color: #718096; text-align: center; padding: 40px 20px;">Aucune maquette</p>'}
-                        </div>
-                        
-                        <div class="mockup-column">
-                            <h3 class="mockup-column-title variation">Variation${hasVariation2 ? ' 1' : ''}</h3>
-                            ${test.maquettes.variation1 ? `<img src="${test.maquettes.variation1}" alt="Maquette Variation 1" class="mockup-image">` : '<p style="color: #718096; text-align: center; padding: 40px 20px;">Aucune maquette</p>'}
-                        </div>
-                        
-                        ${hasVariation2 ? `
-                        <div class="mockup-column">
-                            <h3 class="mockup-column-title variation2">Variation 2</h3>
-                            <img src="${test.maquettes.variation2}" alt="Maquette Variation 2" class="mockup-image">
-                        </div>
-                        ` : ''}
-                    </div>
-                </div>
-            `;
-            
-            return modal;
-        }
-
-        // Ouvrir une modal
-        function openMockupModal(testId) {
-            const modal = document.getElementById(`mockup-modal-${testId}`);
+    // Gestion des modals avec data attributes
+    document.addEventListener('click', function(e) {
+        // Ouvrir modal
+        if (e.target.classList.contains('view-mockup-btn')) {
+            const testId = e.target.getAttribute('data-test-id');
+            const modal = document.getElementById('mockup-modal-' + testId);
             if (modal) {
                 modal.style.display = 'block';
                 document.body.style.overflow = 'hidden';
             }
         }
-
-        // Fermer une modal
-        function closeMockupModal(testId) {
-            const modal = document.getElementById(`mockup-modal-${testId}`);
+        
+        // Fermer modal
+        if (e.target.classList.contains('mockup-close-btn')) {
+            const testId = e.target.getAttribute('data-close-id');
+            const modal = document.getElementById('mockup-modal-' + testId);
             if (modal) {
                 modal.style.display = 'none';
                 document.body.style.overflow = 'auto';
             }
         }
-
-        // Gestion des clics
-        document.addEventListener('click', function(e) {
-            // Fermer en cliquant sur le fond de la modal
-            if (e.target.classList.contains('mockup-modal')) {
-                e.target.style.display = 'none';
-                document.body.style.overflow = 'auto';
-            }
-        });
-
-        // Fermer avec Escape
-        document.addEventListener('keydown', function(event) {
-            if (event.key === 'Escape') {
-                const openModals = document.querySelectorAll('.mockup-modal');
-                openModals.forEach(modal => {
-                    if (modal.style.display === 'block') {
-                        modal.style.display = 'none';
-                        document.body.style.overflow = 'auto';
-                    }
-                });
-            }
-        });
-
-        // Charger les tests en cours
-        async function loadTestsEnCours() {
-            try {
-                const response = await fetch('data/tests-en-cours.json');
-                const tests = await response.json();
-                
-                const grid = document.querySelector('#en-cours .tests-grid');
-                grid.innerHTML = '';
-                
-                if (tests.length === 0) {
-                    grid.innerHTML = '<p style="color: #718096;">Aucun test en cours pour le moment.</p>';
-                    return;
-                }
-                
-                tests.forEach(test => {
-                    const card = createTestCardEnCours(test);
-                    grid.appendChild(card);
-                });
-            } catch (error) {
-                console.error('Erreur lors du chargement des tests en cours:', error);
-                document.querySelector('#en-cours .tests-grid').innerHTML = '<p style="color: #718096;">Erreur lors du chargement des tests.</p>';
-            }
+        
+        // Fermer en cliquant sur le fond
+        if (e.target.classList.contains('mockup-modal')) {
+            e.target.style.display = 'none';
+            document.body.style.overflow = 'auto';
         }
+    });
 
-        // Charger les tests au chargement de la page
-        document.addEventListener('DOMContentLoaded', function() {
-            loadTestsPrevus();
-            loadTestsEnCours();
-        });
-    </script>
+    // Fermer avec Escape
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            const openModals = document.querySelectorAll('.mockup-modal');
+            openModals.forEach(modal => {
+                if (modal.style.display === 'block') {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        }
+    });
+</script>
+    
 </body>
 </html>
