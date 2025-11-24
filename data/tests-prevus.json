@@ -1,5 +1,21 @@
 [{
   "id": "",
+  "title": "Copy of  Affichage choix de couleur des produits",
+  "date": "",
+  "description": "Optimisation de l'affichage en grid 2x2 plutôt qu'en slider",
+  "modifications": null,
+  "testType": "AB",
+  "objective": "Conversion",
+  "typeTemplate": "Template",
+  "device": "All",
+  "page": "Produits",
+  "maquettes": {
+    "control": "",
+    "variation1": "",
+    "variation2": null
+  }
+}{
+  "id": "",
   "title": "Quiz personnalisé produits",
   "date": "2025-11-30",
   "description": "Création d'un quiz interactif pour aider les clientes à trouver les produits adaptés à leur situation",
@@ -10,8 +26,8 @@
   "device": "All",
   "page": "Produits",
   "maquettes": {
-    "control": "https://v5.airtableusercontent.com/v3/u/47/47/1763143200000/YkmVz5BLFJVJqJZa_CcwfQ/Vp94uuJNszPXqSGIQemrJGDLETdXgyI-kiwpxxy2PmZlouYu0K3yfXm_E7PLDkH4ZnsIYeCiA2cIi19u7busHpFsieme0-ZX0tR4KQIisxLAanXv600d_QJz3OSZcCnDXdcvO3xKKHmyMmcbH0i8eHk8kZOS54CWcOvQTqiE83OIVA2QVkN7ObV24wG2_3g9/h_kxP98j-N-PFBJUX-1NoI1dWTrkavRwhjrMr5f1rJ8",
-    "variation1": "https://v5.airtableusercontent.com/v3/u/47/47/1763143200000/w5NfcWCdMHBmmYzTbVc8eQ/fCGzsMAblXt5FWuW8g_DltDJwnKg-Aiw-vAFYX-V7RyfMtjIar2beWdOWaGmuDz3med3jeYJnNvqkKs2zgNZ8RXMENoLL1ppe1pRiTTS94IbcbIhbIjole8JpjZuz8O1FZS3v-s9hbT5lHZzaUIyTE5GC4eDsmYHzmi-lOdDI34QkGQ7lSAeM9eV9H6e6zX-/1rPS9FRaRCLFG0qRSRWUZPs6RJYRzLRGKGLZhFkT26Y",
+    "control": "https://v5.airtableusercontent.com/v3/u/47/47/1764007200000/E89yLwK8rePFFvmKh7qbpQ/jL87qzHugSb9HuNPJbfEo40z_V4BhdqJoTXRqTsLvb9Aqv2K9rEDDOe1Lv7qIjnP8Hnxx9p01LIUG-JssRU-1FmV_1g4hJXWObsMEpaXMh--AYig5a9V4RhILCZoL8qCgG1citH78A4gDOqejPeiQEOhUH3ZpuLQxTQATFqqx6MXvkUnAnJYp38vvVGayM59/OOShNLQq4Pv6o_zdMB4nWqc4U3M8ig-vVWJbeCiPbUU",
+    "variation1": "https://v5.airtableusercontent.com/v3/u/47/47/1764007200000/EZ6DAUWLsseAYQ3M75AH2g/96XWg-yZ4M5VgC7yIEcu8-WzJkc3q39K_SgAAW7RnP3u9IxsN8R14iFxtzHHm-zWSbp4FspAEQX69T1GeBr4DmsD2wsACJxDDjmThvJq3R-ALUSa26EC8e1O53BwHMy-8ZfOXioD5iY8Bzo968kNdoBgrb8hE0M7lhoVPllhH3BJppsCr8eBXxwEk6cyUxHK/ejimnZcTnum1nEYVdfQXTzKcMSD0S2x1Wj1Z_eqNn0c",
     "variation2": null
   }
 }]
