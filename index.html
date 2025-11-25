@@ -582,7 +582,7 @@
 
         <div class="tabs-navigation">
             <button class="tab-button active" onclick="switchTab('accueil', this)">
-                <span>🏠</span>
+                <span></span>
                 <span>Accueil</span>
             </button>
             <button class="tab-button" onclick="switchTab('prevus', this)">
@@ -1036,7 +1036,7 @@
                         ` : ''}
                         ${test.visitors ? `
                         <div class="meta-item">
-                            <span>👥</span>
+                            <span>🦹🏼</span>
                             <span>${parseInt(test.visitors).toLocaleString()} visiteurs</span>
                         </div>
                         ` : ''}
@@ -1057,13 +1057,13 @@
                             </div>
                         </div>
                         <div class="result-badge">
-                            <div class="result-label">Revenu / Visiteur</div>
+                            <div class="result-label">Revenu/Visiteur</div>
                             <div class="result-value ${getValueClass(test.revenuePerVisitor)}">
                                 ${displayKPI(test.revenuePerVisitor)}
                             </div>
                         </div>
                         <div class="result-badge">
-                            <div class="result-label">Profit / Visiteur</div>
+                            <div class="result-label">Profit/Visiteur</div>
                             <div class="result-value ${getValueClass(test.profitPerVisitor)}">
                                 ${displayKPI(test.profitPerVisitor)}
                             </div>
