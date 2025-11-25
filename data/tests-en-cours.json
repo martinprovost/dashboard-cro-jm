@@ -2,7 +2,7 @@
   "id": "recJWo2vfao7S0RX0",
   "title": "Ceci est un test",
   "date": "2025-12-15",
-  "description": "oui",
+  "description": "oui c'est un test",
   "modifications": null,
   "testType": "ABC",
   "objective": "RPV",
@@ -14,7 +14,7 @@
     "variation1": "",
     "variation2": null
   }
-}{
+},{
   "id": "recayPxDu12CmfQ9o",
   "title": "Optimisation bloc 'Combo Idéal'",
   "date": "",
