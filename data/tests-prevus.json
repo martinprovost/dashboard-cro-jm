@@ -1,8 +1,24 @@
 [{
+  "id": "recJWo2vfao7S0RX0",
+  "title": "Ceci est un test",
+  "date": "2025-12-15",
+  "description": "oui",
+  "modifications": null,
+  "testType": "ABC",
+  "objective": "RPV",
+  "typeTemplate": "Template",
+  "device": "Mobile",
+  "page": "Collections",
+  "maquettes": {
+    "control": "",
+    "variation1": "",
+    "variation2": null
+  }
+},{
   "id": "rec3KvaCLqc0jweLP",
   "title": "Copy of  Affichage choix de couleur des produits",
-  "date": "",
-  "description": "Optimisation de l'affichage en grid 2x2 plutôt qu'en slider ) buuuug buuuug \\n",
+  "date": "2025-12-09",
+  "description": "Optimisation de l'affichage en grid 2x2 plutôt qu'en slider ) buuuugx10",
   "modifications": null,
   "testType": "AB",
   "objective": "Conversion",
@@ -14,7 +30,7 @@
     "variation1": "",
     "variation2": null
   }
-}{
+},{
   "id": "recjrp76RQmwJIVXY",
   "title": "Quiz personnalisé produits",
   "date": "2025-11-30",
