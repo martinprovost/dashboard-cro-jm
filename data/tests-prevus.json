@@ -10,9 +10,9 @@
   "device": "Mobile",
   "page": "Collections",
   "maquettes": {
-    "control": ,
-    "variation1": ,
-    "variation2": 
+    "control": "",
+    "variation1": "",
+    "variation2": null
   }
 },{
   "id": "rec3KvaCLqc0jweLP",
@@ -26,9 +26,9 @@
   "device": "All",
   "page": "Produits",
   "maquettes": {
-    "control": ,
-    "variation1": ,
-    "variation2": 
+    "control": "",
+    "variation1": "",
+    "variation2": null
   }
 },{
   "id": "recjrp76RQmwJIVXY",
@@ -42,8 +42,8 @@
   "device": "All",
   "page": "Produits",
   "maquettes": {
-    "control": \" + 6.`Maquette Contrôle`[1].url + ,
-    "variation1": \" + 6.`Maquette Variation 1`[1].url + ,
-    "variation2": 
+    "control": "https://v5.airtableusercontent.com/v3/u/47/47/1764079200000/oYRVoEVpSy9L11-lblbTjA/Jo4dPKHJWaL1UDW6TslRgmwEvty7kXser9AFVbh3cDXezp8eXz7SuZ9PwKlwNhXaF6EyOBL_jQ26og2APkK__dqJ5WA6VypI3_aRpXSCK8qiXgO3TnBW2vFIHCYlqoT5naJ9MXlxaiaKx_kM4U5a8tZa-it67ik545If-5AgG9EP0HDJR9ZejhLRUfjZoHXq/rJtSxzOzy9Fde_w7huFvYcJaADiSAap-11zPXFld-VE",
+    "variation1": "https://v5.airtableusercontent.com/v3/u/47/47/1764079200000/gHcR1O1w6O4nnBLDRZL3-A/CJ2PW-iW0NdcVC_PgnZbWxIdkPov30ASEhg9HYT3IwtJ1bXU9ptr84HPK0lG1GkA8ltUujDn-Cyqelws0Lwg2e9oPdhOgQqirms43zYxDDL7LeBRuzWAM5BPg8O1P6UnceS7hugLc-SOM2iiX1Jko3_0kJe-kMkvFR7pPrpbfshwqsdm4U9Vcb-0K3WITi3l/p_8xfQhHoBIxQe8sEJNlzF_KdjfYK62Bx5MYi9AiRso",
+    "variation2": null
   }
 }]
