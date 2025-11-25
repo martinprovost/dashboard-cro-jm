@@ -1001,7 +1001,7 @@
                 const statusText = test.result === 'Gagnant' ? 'Gagnant' : 'Perdant';
                 
                 // Déterminer si le CTA doit être activé
-                const hasAnalysis = test.analysisStatus === 'Ready' && test.analysisUrl;
+                const hasAnalysis = test.analysisStatus === 'Fait' && test.analysisUrl;
                 const ctaClass = hasAnalysis ? 'view-mockup-btn' : 'view-mockup-btn disabled';
                 const ctaText = hasAnalysis ? 'Voir l\'analyse détaillée' : 'Analyse en cours';
                 
