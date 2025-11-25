@@ -1,8 +1,8 @@
 [{
-  "id": "",
+  "id": "rec3KvaCLqc0jweLP",
   "title": "Copy of  Affichage choix de couleur des produits",
   "date": "",
-  "description": "Optimisation de l'affichage en grid 2x2 plutôt qu'en slider ) wesh\\n",
+  "description": "Optimisation de l'affichage en grid 2x2 plutôt qu'en slider ) wesh w\\n",
   "modifications": null,
   "testType": "AB",
   "objective": "Conversion",
@@ -14,8 +14,8 @@
     "variation1": "",
     "variation2": null
   }
-}{
-  "id": "",
+},{
+  "id": "recjrp76RQmwJIVXY",
   "title": "Quiz personnalisé produits",
   "date": "2025-11-30",
   "description": "Création d'un quiz interactif pour aider les clientes à trouver les produits adaptés à leur situation",
@@ -26,8 +26,8 @@
   "device": "All",
   "page": "Produits",
   "maquettes": {
-    "control": "https://v5.airtableusercontent.com/v3/u/47/47/1764007200000/E89yLwK8rePFFvmKh7qbpQ/jL87qzHugSb9HuNPJbfEo40z_V4BhdqJoTXRqTsLvb9Aqv2K9rEDDOe1Lv7qIjnP8Hnxx9p01LIUG-JssRU-1FmV_1g4hJXWObsMEpaXMh--AYig5a9V4RhILCZoL8qCgG1citH78A4gDOqejPeiQEOhUH3ZpuLQxTQATFqqx6MXvkUnAnJYp38vvVGayM59/OOShNLQq4Pv6o_zdMB4nWqc4U3M8ig-vVWJbeCiPbUU",
-    "variation1": "https://v5.airtableusercontent.com/v3/u/47/47/1764007200000/EZ6DAUWLsseAYQ3M75AH2g/96XWg-yZ4M5VgC7yIEcu8-WzJkc3q39K_SgAAW7RnP3u9IxsN8R14iFxtzHHm-zWSbp4FspAEQX69T1GeBr4DmsD2wsACJxDDjmThvJq3R-ALUSa26EC8e1O53BwHMy-8ZfOXioD5iY8Bzo968kNdoBgrb8hE0M7lhoVPllhH3BJppsCr8eBXxwEk6cyUxHK/ejimnZcTnum1nEYVdfQXTzKcMSD0S2x1Wj1Z_eqNn0c",
+    "control": "https://v5.airtableusercontent.com/v3/u/47/47/1764072000000/dSvCzQSzH8jlcMay1YVhxA/UB-j_GN_F-WLPQAxzhC0XOeBseWBZ2hy3nbXbsxaEH8TvuzTaa83YPGnd7j_gVxEHl9FLpU8ajlS7SU2T4J-bc3EYtle5R4vHI06zZK6xFBMC5EzTWl1CjRVYE44Yczv5IwIDzUhp1ROt-ILGtRa-sTQPwKjl4xRylwwSWgdSCdIporSCUtFuUa7xHkVrshx/xQOI8p8WO_zrWpFQ_4O53jB48rea3GfMYH5u5f85xCo",
+    "variation1": "https://v5.airtableusercontent.com/v3/u/47/47/1764072000000/Bf6z-tpbUzSul9j6hQfSCA/urvLWFr43QbloF3txF6k9IrgoOnzJrPckyzf-iZ23jJLSxvuQyJ-q6WD3yqmiI94FamCgPXHxYEDMGZ2B1_BSSKvS_wu7E6gzucAhVXAhDpEoFuWUKlCYkrDLP-0KnGFIWOV2W_zjQETh-0n0Ja84XX3ed1CBa5mshC5H7GaFZYeuryizMW8xDo9xMwYWBgd/XC-3mYZUxGvOzWuTb3zOwTaq7aCO1y0BlObXuOE4IGY",
     "variation2": null
   }
 }]
