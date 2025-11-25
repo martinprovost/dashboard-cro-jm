@@ -1,5 +1,5 @@
 [{
-  "id": "recJWo2vfao7S0RX0",
+  "id": "{",
   "title": "Ceci est un test",
   "date": "2025-12-15",
   "description": "oui",
@@ -10,12 +10,12 @@
   "device": "Mobile",
   "page": "Collections",
   "maquettes": {
-    "control": "",
-    "variation1": "",
+    "control": null,
+    "variation1": null,
     "variation2": null
   }
-}{
-  "id": "rec3KvaCLqc0jweLP",
+},{
+  "id": "{",
   "title": "Copy of  Affichage choix de couleur des produits",
   "date": "2025-12-09",
   "description": "Optimisation de l'affichage en grid 2x2 plutôt qu'en slider ) buuuugx10",
@@ -26,12 +26,12 @@
   "device": "All",
   "page": "Produits",
   "maquettes": {
-    "control": "",
-    "variation1": "",
+    "control": null,
+    "variation1": null,
     "variation2": null
   }
-}{
-  "id": "recjrp76RQmwJIVXY",
+},{
+  "id": "{",
   "title": "Quiz personnalisé produits",
   "date": "2025-11-30",
   "description": "Création d'un quiz interactif pour aider les clientes à trouver les produits adaptés à leur situation",
@@ -42,8 +42,8 @@
   "device": "All",
   "page": "Produits",
   "maquettes": {
-    "control": "https://v5.airtableusercontent.com/v3/u/47/47/1764072000000/dSvCzQSzH8jlcMay1YVhxA/UB-j_GN_F-WLPQAxzhC0XOeBseWBZ2hy3nbXbsxaEH8TvuzTaa83YPGnd7j_gVxEHl9FLpU8ajlS7SU2T4J-bc3EYtle5R4vHI06zZK6xFBMC5EzTWl1CjRVYE44Yczv5IwIDzUhp1ROt-ILGtRa-sTQPwKjl4xRylwwSWgdSCdIporSCUtFuUa7xHkVrshx/xQOI8p8WO_zrWpFQ_4O53jB48rea3GfMYH5u5f85xCo",
-    "variation1": "https://v5.airtableusercontent.com/v3/u/47/47/1764072000000/Bf6z-tpbUzSul9j6hQfSCA/urvLWFr43QbloF3txF6k9IrgoOnzJrPckyzf-iZ23jJLSxvuQyJ-q6WD3yqmiI94FamCgPXHxYEDMGZ2B1_BSSKvS_wu7E6gzucAhVXAhDpEoFuWUKlCYkrDLP-0KnGFIWOV2W_zjQETh-0n0Ja84XX3ed1CBa5mshC5H7GaFZYeuryizMW8xDo9xMwYWBgd/XC-3mYZUxGvOzWuTb3zOwTaq7aCO1y0BlObXuOE4IGY",
+    "control": \" + 6.`Maquette Contrôle`[1].url + ,
+    "variation1": \" + 6.`Maquette Variation 1`[1].url + ,
     "variation2": null
   }
 }]
