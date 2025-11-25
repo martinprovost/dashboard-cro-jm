@@ -1,20 +1,4 @@
 [{
-  "id": "recjrp76RQmwJIVXY",
-  "title": "Quiz personnalisé produits",
-  "date": "2025-11-25",
-  "description": "Création d'un quiz interactif pour aider les clientes à trouver les produits adaptés à leur situation",
-  "modifications": null,
-  "testType": "ABC",
-  "objective": "Conversion NC",
-  "typeTemplate": "Template",
-  "device": "All",
-  "page": "Produits",
-  "maquettes": {
-    "control": "https://v5.airtableusercontent.com/v3/u/47/47/1764079200000/oYRVoEVpSy9L11-lblbTjA/Jo4dPKHJWaL1UDW6TslRgmwEvty7kXser9AFVbh3cDXezp8eXz7SuZ9PwKlwNhXaF6EyOBL_jQ26og2APkK__dqJ5WA6VypI3_aRpXSCK8qiXgO3TnBW2vFIHCYlqoT5naJ9MXlxaiaKx_kM4U5a8tZa-it67ik545If-5AgG9EP0HDJR9ZejhLRUfjZoHXq/rJtSxzOzy9Fde_w7huFvYcJaADiSAap-11zPXFld-VE",
-    "variation1": "https://v5.airtableusercontent.com/v3/u/47/47/1764079200000/gHcR1O1w6O4nnBLDRZL3-A/CJ2PW-iW0NdcVC_PgnZbWxIdkPov30ASEhg9HYT3IwtJ1bXU9ptr84HPK0lG1GkA8ltUujDn-Cyqelws0Lwg2e9oPdhOgQqirms43zYxDDL7LeBRuzWAM5BPg8O1P6UnceS7hugLc-SOM2iiX1Jko3_0kJe-kMkvFR7pPrpbfshwqsdm4U9Vcb-0K3WITi3l/p_8xfQhHoBIxQe8sEJNlzF_KdjfYK62Bx5MYi9AiRso",
-    "variation2": null
-  }
-},{
   "id": "recJWo2vfao7S0RX0",
   "title": "Ceci est un test",
   "date": "2025-12-15",
@@ -28,6 +12,22 @@
   "maquettes": {
     "control": "",
     "variation1": "",
+    "variation2": null
+  }
+},{
+  "id": "recjrp76RQmwJIVXY",
+  "title": "Quiz personnalisé produits",
+  "date": "2025-11-25",
+  "description": "Création d'un quiz interactif pour aider les clientes à trouver les produits adaptés à leur situation",
+  "modifications": null,
+  "testType": "ABC",
+  "objective": "Conversion NC",
+  "typeTemplate": "Template",
+  "device": "All",
+  "page": "Produits",
+  "maquettes": {
+    "control": "https://v5.airtableusercontent.com/v3/u/47/47/1764093600000/VEyihlzoeVPLV_7-C3eaXg/m1gUv2KxuzWyizmNXGsIfEkMJXrkSgHsJJ2ix3ETFeU02_Zg59Bv50z6RzKvffNaKFdf3D8MOxnTfs5Rp5P7V99-jEVZ7lvnlGR3AOQ0Ba3rIoQ5lAj06YnhFQ8ttsBlX_gz22HM6wciPzhORhrzb9rO1Jmzb23SYI1aV159H29pT520aGPUIRRS3-0c81Vh/TPwqIi8tvwNi2oPdiUm4SRzFzXXw_yZlnSk3QWbjLIE",
+    "variation1": "https://v5.airtableusercontent.com/v3/u/47/47/1764093600000/QxJOtYHCPKUWNKdI4NL9Vw/3LqbrZUa1jzbRF3IhXr1TkWKd5_UO252G7WzCfmwZ21MYPbs7y8OHwrMc__vXB1dIpaObvThfdVS6fN-_WEh1MalnqiwO_wdAmX4skRnNXEQpit6_KIX-b_LWLXz25m_HY24GoqXCoA1JSN_PsyT-ZVocUVbChZo0kLg1OXgF0mP1GwkUnqRexHK9bm4ZIkx/jK-f-RpJwADCi4GBxZcEZaT_Fopms1b03nNjpSEgXSs",
     "variation2": null
   }
 },{
