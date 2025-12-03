@@ -1097,13 +1097,52 @@
                     document.querySelector('#termines .tests-grid').innerHTML = '<p style="color: #718096;">Erreur lors du chargement des tests.</p>';
                 }
             }
-
-        // Charger les tests au chargement de la page
-        document.addEventListener('DOMContentLoaded', function() {
-            loadTestsPrevus();
-            loadTestsEnCours();
-            loadTestsTermines();
+        
+   // Fonction pour mettre à jour les KPIs de l'accueil
+async function updateHomeKPIs() {
+    try {
+        // Charger les données des trois onglets
+        const [prevusData, enCoursData, terminesData] = await Promise.all([
+            fetch('data/tests-prevus.json').then(r => r.json()).catch(() => []),
+            fetch('data/tests-en-cours.json').then(r => r.json()).catch(() => []),
+            fetch('data/tests-termines.json').then(r => r.json()).catch(() => [])
+        ]);
+        
+        // Calculer les KPIs
+        const totalTests = terminesData.length;
+        const testsEnCours = enCoursData.length;
+        
+        // Calculer le pourcentage de tests gagnants
+        let testsGagnants = 0;
+        terminesData.forEach(test => {
+            if (test.result === 'Gagnant') {
+                testsGagnants++;
+            }
         });
+        
+        const pourcentageGagnants = totalTests > 0 ? Math.round((testsGagnants / totalTests) * 100) : 0;
+        
+        // Mettre à jour les valeurs dans le DOM
+        document.querySelector('.home-stats-grid .home-stat-card:nth-child(1) .home-stat-number').textContent = totalTests;
+        document.querySelector('.home-stats-grid .home-stat-card:nth-child(2) .home-stat-number').textContent = testsEnCours;
+        document.querySelector('.home-stats-grid .home-stat-card:nth-child(3) .home-stat-number').textContent = pourcentageGagnants + '%';
+        
+    } catch (error) {
+        console.error('Erreur lors de la mise à jour des KPIs:', error);
+    }
+}
+
+// Charger les tests au chargement de la page
+document.addEventListener('DOMContentLoaded', function() {
+    // Mettre à jour les KPIs d'abord
+    updateHomeKPIs();
+    
+    // Puis charger les tests
+    loadTestsPrevus();
+    loadTestsEnCours();
+    loadTestsTermines();
+});
+        
     </script>
 </body>
 </html>
