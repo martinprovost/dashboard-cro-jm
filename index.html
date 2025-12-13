@@ -1186,20 +1186,20 @@ async function updateImpactKPIs() {
             }
         });
         
-        // Calculer les moyennes
-        const avgConversion = countConversion > 0 ? Math.round(totalConversion / countConversion) : 0;
-        const avgRevenu = countRevenu > 0 ? Math.round(totalRevenu / countRevenu) : 0;
-        const avgProfit = countProfit > 0 ? Math.round(totalProfit / countProfit) : 0;
-        
-        // Mettre à jour les valeurs dans le DOM
-        document.querySelector('.impact-cards-grid .impact-card:nth-child(1) .impact-main-value').textContent = 
-            avgConversion > 0 ? `+${avgConversion}%` : '+0%';
-            
-        document.querySelector('.impact-cards-grid .impact-card:nth-child(2) .impact-main-value').textContent = 
-            avgRevenu > 0 ? `+${avgRevenu}%` : '+0%';
-            
-        document.querySelector('.impact-cards-grid .impact-card:nth-child(3) .impact-main-value').textContent = 
-            avgProfit > 0 ? `+${avgProfit}%` : '+0%';
+// Calculer les moyennes (avec 1 décimale)
+const avgConversion = countConversion > 0 ? (totalConversion / countConversion).toFixed(1) : '0.0';
+const avgRevenu = countRevenu > 0 ? (totalRevenu / countRevenu).toFixed(1) : '0.0';
+const avgProfit = countProfit > 0 ? (totalProfit / countProfit).toFixed(1) : '0.0';
+
+// Mettre à jour les valeurs dans le DOM
+document.querySelector('.impact-cards-grid .impact-card:nth-child(1) .impact-main-value').textContent = 
+    `+${avgConversion}%`;
+    
+document.querySelector('.impact-cards-grid .impact-card:nth-child(2) .impact-main-value').textContent = 
+    `+${avgRevenu}%`;
+    
+document.querySelector('.impact-cards-grid .impact-card:nth-child(3) .impact-main-value').textContent = 
+    `+${avgProfit}%`;
         
     } catch (error) {
         console.error('Erreur lors de la mise à jour des KPIs d\'impact:', error);
