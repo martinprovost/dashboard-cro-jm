@@ -1132,10 +1132,85 @@ async function updateHomeKPIs() {
     }
 }
 
+// Fonction pour extraire la valeur numérique d'une string (ex: "+10%" -> 10)
+function extractNumericValue(value) {
+    if (!value || value === '' || value === 'En attente' || value === 'null') return null;
+    // Enlever le "+" ou "-" et le "%", puis convertir en nombre
+    const numStr = value.replace(/[+%]/g, '');
+    const num = parseFloat(numStr);
+    return isNaN(num) ? null : num;
+}
+
+// Fonction pour mettre à jour les KPIs d'impact global
+async function updateImpactKPIs() {
+    try {
+        const response = await fetch('data/tests-termines.json');
+        const terminesData = await response.json();
+        
+        if (terminesData.length === 0) {
+            // Aucun test terminé, on laisse les valeurs à 0
+            return;
+        }
+        
+        // Variables pour calculer les moyennes
+        let totalConversion = 0;
+        let countConversion = 0;
+        
+        let totalRevenu = 0;
+        let countRevenu = 0;
+        
+        let totalProfit = 0;
+        let countProfit = 0;
+        
+        // Parcourir tous les tests terminés
+        terminesData.forEach(test => {
+            // Conversion
+            const conversionValue = extractNumericValue(test.conversionRate);
+            if (conversionValue !== null) {
+                totalConversion += conversionValue;
+                countConversion++;
+            }
+            
+            // Revenu/Visiteur
+            const revenuValue = extractNumericValue(test.revenuePerVisitor);
+            if (revenuValue !== null) {
+                totalRevenu += revenuValue;
+                countRevenu++;
+            }
+            
+            // Profit/Visiteur
+            const profitValue = extractNumericValue(test.profitPerVisitor);
+            if (profitValue !== null) {
+                totalProfit += profitValue;
+                countProfit++;
+            }
+        });
+        
+        // Calculer les moyennes
+        const avgConversion = countConversion > 0 ? Math.round(totalConversion / countConversion) : 0;
+        const avgRevenu = countRevenu > 0 ? Math.round(totalRevenu / countRevenu) : 0;
+        const avgProfit = countProfit > 0 ? Math.round(totalProfit / countProfit) : 0;
+        
+        // Mettre à jour les valeurs dans le DOM
+        document.querySelector('.impact-cards-grid .impact-card:nth-child(1) .impact-main-value').textContent = 
+            avgConversion > 0 ? `+${avgConversion}%` : '+0%';
+            
+        document.querySelector('.impact-cards-grid .impact-card:nth-child(2) .impact-main-value').textContent = 
+            avgRevenu > 0 ? `+${avgRevenu}%` : '+0%';
+            
+        document.querySelector('.impact-cards-grid .impact-card:nth-child(3) .impact-main-value').textContent = 
+            avgProfit > 0 ? `+${avgProfit}%` : '+0%';
+        
+    } catch (error) {
+        console.error('Erreur lors de la mise à jour des KPIs d\'impact:', error);
+    }
+}
+
 // Charger les tests au chargement de la page
 document.addEventListener('DOMContentLoaded', function() {
     // Mettre à jour les KPIs d'abord
     updateHomeKPIs();
+    updateImpactKPIs();
     
     // Puis charger les tests
     loadTestsPrevus();
