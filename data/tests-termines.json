@@ -1,17 +1,17 @@
 [{
   "id": "recJWo2vfao7S0RX0",
-  "title": "Ceci est un test",
+  "title": "Affichage filtre page collection",
   "date": "2025-11-16",
-  "endDate": "2025-11-24",
-  "duration": "9",
+  "endDate": "2025-12-12",
+  "duration": "27",
   "visitors": "62456",
   "result": "Gagnant",
-  "description": "oui c'est un test",
+  "description": "Faciliter l'accès aux filtres sur les pages collection",
   "conversionRate": "+8%",
   "revenuePerVisitor": "+10%",
   "profitPerVisitor": "+10.5%",
-  "analysisUrl": "",
-  "analysisStatus": ""
+  "analysisUrl": "https://www.notion.so/ABC-Simplifier-le-menu-mobile-25653f7b738180f0ab14e54ff1a2ce66?source=copy_link",
+  "analysisStatus": "Fait"
 },{
   "id": "reczW4UB5YmQ0Mft7",
   "title": "Simplifier le menu mobile",
@@ -20,10 +20,10 @@
   "duration": "44",
   "visitors": "134705",
   "result": "Gagnant",
-  "description": "",
+  "description": "Faciliter la navigation et la découverte des produits",
   "conversionRate": "",
   "revenuePerVisitor": "",
   "profitPerVisitor": "",
-  "analysisUrl": "https://www.notion.so/ABC-Simplifier-le-menu-mobile-25653f7b738180f0ab14e54ff1a2ce66?source=copy_link",
-  "analysisStatus": "Fait"
+  "analysisUrl": "",
+  "analysisStatus": "En attente"
 }]
