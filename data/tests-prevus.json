@@ -1,7 +1,7 @@
 [{
   "id": "rec3KvaCLqc0jweLP",
-  "title": "Copy of  Affichage choix de couleur des produits",
-  "date": "2025-12-09",
+  "title": "Affichage choix de couleur des produits",
+  "date": "2026-01-05",
   "description": "Optimisation de l'affichage en grid 2x2 plutôt qu'en slider",
   "modifications": null,
   "testType": "AB",
@@ -10,8 +10,8 @@
   "device": "All",
   "page": "Produits",
   "maquettes": {
-    "control": "",
-    "variation1": "",
+    "control": "https://v5.airtableusercontent.com/v3/u/48/48/1766448000000/9ZXesjfvV3AHCUS61LYWHg/ToiQPHIZbFqe7f9sZkd6vgarvK9qMStytc-8NI2rk9RBWNjkqH-BPOvS3YnrNmFhFqOP_mZ-Jtzo4b_bJl15RcNhXzoHcPe2eZ1vjvA4Kkv2yA0VctijfAYRJ3grQ9wqTuekqGtzj3awHSQIfjfZk_hgt912ivXin7MvGW8Ya14/xtlZk-HQLuK-_kw0VNYoJydk8910UH0QJfuB5886pr4",
+    "variation1": "https://v5.airtableusercontent.com/v3/u/48/48/1766448000000/Ee5OXJ5Cxn9y00w5Va7uLQ/xBX2Ov92J2c6EXmYTCf5byOVKTrVNewR8844oAYQOp7ezdUGjNp4uJsOEIFLLcsuvn8MEFZp7zk3oRekiC1ou8z6xlXQuETsbM3o4duSvJqUtkv1F2zYf76x57DfVBilaZX1nPYQXpkD6aLguC7NBfhQk2l7cwdUM_CXUzpi4BE/UN8Bqng5fa9o5z9uZH_3SkJwRhYywH7eSsIEwlCi_Xo",
     "variation2": null
   }
 }]
